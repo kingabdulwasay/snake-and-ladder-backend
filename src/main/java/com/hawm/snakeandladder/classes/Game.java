@@ -3,12 +3,11 @@ package com.hawm.snakeandladder.classes;
 import java.util.*;
 
 public class Game {
-    private List<Player> players;
-
-    private static Random dice = new Random();
 
 
-    public static int rollDice() {
+    private Random dice = new Random();
+
+    public int rollDice() {
         return dice.nextInt(6) + 1;
     }
 
